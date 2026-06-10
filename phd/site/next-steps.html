@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="zh-CN" data-lang="zh">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PhD Skill Next Steps</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="language.js" defer></script>
+</head>
+<body>
+  <header>
+    <p class="topline i18n zh">下一步控制面</p><p class="topline i18n en">Next steps control surface</p>
+    <h1 class="i18n zh">PhD Skill 下一步</h1><h1 class="i18n en">PhD Skill Next Steps</h1>
+    <p class="lead i18n zh">这个页面用于记录 agent 建议的后续研究动作。用户可以在这里编辑、确认、跳过或重排优先级。Agent 不应把这些内容散落成 todos.md。</p>
+    <p class="lead i18n en">This page records proposed follow-up research actions. Users can edit, confirm, skip, or reprioritize them here. Agents should not scatter these items into todos.md.</p>
+    <div class="language-switch" aria-label="Language"><button type="button" data-set-lang="zh">中文</button><button type="button" data-set-lang="en">English</button></div>
+    <nav class="i18n zh"><a href="index.html">总览</a><a href="user-manual.html">用户手册</a><a href="design-philosophy.html">设计理念</a><a href="architecture.html">Skill 架构</a><a href="site-model.html">网站模型</a><a href="glossary.html">术语表</a><a href="next-steps.html">下一步</a><a href="log.html">日志</a></nav>
+    <nav class="i18n en"><a href="index.html">Overview</a><a href="user-manual.html">User Manual</a><a href="design-philosophy.html">Design Philosophy</a><a href="architecture.html">Skill Architecture</a><a href="site-model.html">Living Site Model</a><a href="glossary.html">Glossary</a><a href="next-steps.html">Next Steps</a><a href="log.html">Log</a></nav>
+  </header>
+  <main>
+    <div class="i18n zh">
+      <section class="marker">
+        <strong>使用规则：</strong>新条目默认是 <code>proposed</code>。用户确认后改成 <code>confirmed</code>，agent 再开始执行。这里是用户和 agent 共同维护的下一步队列。
+      </section>
+      <section>
+        <h2>建议的下一步</h2>
+        <table>
+          <thead><tr><th>优先级</th><th>建议动作</th><th>理由</th><th>预期产物</th><th>依赖</th><th>状态</th><th>用户备注</th></tr></thead>
+          <tbody>
+            <tr><td>High</td><td>为 `$phd` 增加 topic research site 初始化脚本。</td><td>让 agent 不再手写重复 HTML 骨架。</td><td><code>scripts/init-research-site.*</code> 与模板站点。</td><td>确定默认页面结构。</td><td>proposed</td><td>待确认。</td></tr>
+            <tr><td>High</td><td>把 HTML-first 规则补进用户手册的例子。</td><td>减少 agent 继续生成 Markdown side files 的概率。</td><td>更新后的 <code>user-manual.html</code>。</td><td>无。</td><td>proposed</td><td>待确认。</td></tr>
+            <tr><td>Medium</td><td>为 claims、actors、timeline、hypotheses 设计标准 HTML section 模板。</td><td>提高研究站点阅读性和更新速度。</td><td>模板说明或示例页面。</td><td>需要试用一个真实 topic。</td><td>proposed</td><td>待确认。</td></tr>
+          </tbody>
+        </table>
+      </section>
+      <section>
+        <h2>状态说明</h2>
+        <ul>
+          <li><code>proposed</code>：agent 建议，用户尚未确认。</li>
+          <li><code>confirmed</code>：用户已经批准，可以执行。</li>
+          <li><code>in progress</code>：正在执行。</li>
+          <li><code>done</code>：已经完成。</li>
+          <li><code>skipped</code>：决定暂不执行。</li>
+        </ul>
+      </section>
+    </div>
+    <div class="i18n en">
+      <section class="marker">
+        <strong>Rule:</strong> New items default to <code>proposed</code>. After user confirmation, change them to <code>confirmed</code>, then the agent can begin. This page is the shared next-action queue for user and agent.
+      </section>
+      <section>
+        <h2>Proposed Next Steps</h2>
+        <table>
+          <thead><tr><th>Priority</th><th>Proposed step</th><th>Rationale</th><th>Expected artifact</th><th>Dependencies</th><th>Status</th><th>User notes</th></tr></thead>
+          <tbody>
+            <tr><td>High</td><td>Add a topic research site initializer for `$phd`.</td><td>Prevents agents from rewriting the same HTML skeleton.</td><td><code>scripts/init-research-site.*</code> and a template site.</td><td>Confirm default page structure.</td><td>proposed</td><td>Needs confirmation.</td></tr>
+            <tr><td>High</td><td>Add HTML-first rules to user manual examples.</td><td>Reduces the chance that agents keep creating Markdown side files.</td><td>Updated <code>user-manual.html</code>.</td><td>None.</td><td>proposed</td><td>Needs confirmation.</td></tr>
+            <tr><td>Medium</td><td>Design standard HTML section templates for claims, actors, timelines, and hypotheses.</td><td>Improves readability and update speed for research sites.</td><td>Template notes or example pages.</td><td>Test on a real topic.</td><td>proposed</td><td>Needs confirmation.</td></tr>
+          </tbody>
+        </table>
+      </section>
+      <section>
+        <h2>Status Legend</h2>
+        <ul>
+          <li><code>proposed</code>: suggested by the agent, not yet confirmed by the user.</li>
+          <li><code>confirmed</code>: approved by the user, ready to execute.</li>
+          <li><code>in progress</code>: currently being worked on.</li>
+          <li><code>done</code>: completed.</li>
+          <li><code>skipped</code>: intentionally not doing it.</li>
+        </ul>
+      </section>
+    </div>
+  </main>
+</body>
+</html>

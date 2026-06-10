@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="zh-CN" data-lang="zh">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Living Research Site Model</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="language.js" defer></script>
+</head>
+<body>
+  <header>
+    <p class="topline i18n zh">持续研究网站</p><p class="topline i18n en">Living research site</p>
+    <h1 class="i18n zh">持续 Enrich 的 HTML</h1><h1 class="i18n en">Continuously Enriched HTML</h1>
+    <p class="lead i18n zh">`$phd` 的长期输出不是一篇单次报告，而是一组可以持续生长的静态 HTML 页面。</p>
+    <p class="lead i18n en">The durable output of `$phd` is not a single report. It is a set of static HTML pages that can keep growing.</p>
+    <div class="language-switch" aria-label="Language"><button type="button" data-set-lang="zh">中文</button><button type="button" data-set-lang="en">English</button></div>
+    <nav class="i18n zh"><a href="index.html">总览</a><a href="user-manual.html">用户手册</a><a href="design-philosophy.html">设计理念</a><a href="architecture.html">Skill 架构</a><a href="site-model.html">网站模型</a><a href="glossary.html">术语表</a><a href="next-steps.html">下一步</a><a href="log.html">日志</a></nav>
+    <nav class="i18n en"><a href="index.html">Overview</a><a href="user-manual.html">User Manual</a><a href="design-philosophy.html">Design Philosophy</a><a href="architecture.html">Skill Architecture</a><a href="site-model.html">Living Site Model</a><a href="glossary.html">Glossary</a><a href="next-steps.html">Next Steps</a><a href="log.html">Log</a></nav>
+  </header>
+  <main>
+    <div class="i18n zh">
+      <section><h2>默认结构</h2><table><thead><tr><th>页面</th><th>作用</th></tr></thead><tbody>
+        <tr><td>index.html</td><td>总览、当前框架、关键发现、最新变化。</td></tr>
+        <tr><td>background.html</td><td>术语、背景、前置知识、边界。</td></tr>
+        <tr><td>glossary.html</td><td>研究过程中出现的概念、术语、缩写、方法、项目、人物和组织。</td></tr>
+        <tr><td>related-work.html</td><td>相关工作分组、比较、人物组织、项目、论文。</td></tr>
+        <tr><td>frameworks.html</td><td>概念框架、taxonomy、因果模型、timeline。</td></tr>
+        <tr><td>hypotheses.html</td><td>Insights、hypotheses、gaps、开放问题、测试路径。</td></tr>
+        <tr><td>sources.html</td><td>来源、注释、claim 支撑、来源局限。</td></tr>
+        <tr><td>next-steps.html</td><td>建议的下一步、优先级、预期产物、依赖和用户确认状态。</td></tr>
+        <tr><td>log.html</td><td>带日期的 enrichment 记录和下一步目标。</td></tr>
+      </tbody></table></section>
+      <section><h2>Enrichment 规则</h2><ul><li>修改前先读现有网站。</li><li>保留有价值的既有工作，除非已经被取代。</li><li>标记新增和实质变化内容。</li><li>每次研究 pass 都增加日期日志。</li><li>遇到重要概念、术语、缩写或专名时，更新 glossary.html。</li><li>把建议的下一步写入 next-steps.html，等待用户确认。</li><li>不要默认创建 actor-map.md、claims.md、todos.md 等 Markdown 研究产物。</li><li>保持页面间导航链接可用。</li><li>保持 file:// 友好，尽量少依赖。</li></ul></section>
+      <section><h2>为什么用 HTML</h2><p>HTML 易导航、易检查、易链接，适合表格和结构化视觉表达，也可以从单页自然生长成不需要服务器的小网站。</p></section>
+    </div>
+    <div class="i18n en">
+      <section><h2>Default Shape</h2><table><thead><tr><th>Page</th><th>Role</th></tr></thead><tbody>
+        <tr><td>index.html</td><td>Overview, current framework, key findings, latest changes.</td></tr>
+        <tr><td>background.html</td><td>Terms, context, prerequisites, boundaries.</td></tr>
+        <tr><td>glossary.html</td><td>Concepts, terms, acronyms, methods, projects, people, and organizations that appear during research.</td></tr>
+        <tr><td>related-work.html</td><td>Related work clusters, comparisons, actors, organizations, projects, papers.</td></tr>
+        <tr><td>frameworks.html</td><td>Conceptual frameworks, taxonomies, causal models, timelines.</td></tr>
+        <tr><td>hypotheses.html</td><td>Insights, hypotheses, gaps, open questions, tests.</td></tr>
+        <tr><td>sources.html</td><td>Sources, annotations, claim support, limitations.</td></tr>
+        <tr><td>next-steps.html</td><td>Proposed next steps, priorities, expected artifacts, dependencies, and user confirmation status.</td></tr>
+        <tr><td>log.html</td><td>Dated enrichment entries and next targets.</td></tr>
+      </tbody></table></section>
+      <section><h2>Enrichment Rules</h2><ul><li>Read the existing site before changing it.</li><li>Preserve useful prior work unless superseded.</li><li>Mark new and materially changed content.</li><li>Add a dated log entry for each research pass.</li><li>Update glossary.html when important concepts, terms, acronyms, or named entities appear.</li><li>Put proposed next actions in next-steps.html for user confirmation.</li><li>Do not create Markdown research artifacts such as actor-map.md, claims.md, or todos.md by default.</li><li>Keep navigation links working across pages.</li><li>Keep the site file:// friendly and dependency-light.</li></ul></section>
+      <section><h2>Why HTML</h2><p>HTML is navigable, inspectable, easy to link, friendly to tables and visual structures, and can grow from one page into a small website without a server.</p></section>
+    </div>
+    <footer><span class="i18n zh">未来版本：加入课题研究网站生成脚本。</span><span class="i18n en">Future version: add a generator script for topic-specific research sites.</span></footer>
+  </main>
+</body>
+</html>

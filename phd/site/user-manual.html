@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="zh-CN" data-lang="zh">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PhD Skill User Manual</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="language.js" defer></script>
+</head>
+<body>
+  <header>
+    <p class="topline i18n zh">用户手册</p>
+    <p class="topline i18n en">User manual</p>
+    <h1 class="i18n zh">如何使用 PhD Skill</h1>
+    <h1 class="i18n en">How To Use PhD Skill</h1>
+    <p class="lead i18n zh">`$phd` 是一个可组合的研究 skill，用于建立认知框架、survey 相关工作、综合复杂材料、提出假设，并持续 enrich 静态 HTML 研究网站。</p>
+    <p class="lead i18n en">`$phd` is a composable research skill for building frameworks, surveying related work, synthesizing complex material, generating hypotheses, and continuously enriching static HTML research sites.</p>
+    <div class="language-switch" aria-label="Language">
+      <button type="button" data-set-lang="zh">中文</button>
+      <button type="button" data-set-lang="en">English</button>
+    </div>
+    <nav class="i18n zh">
+      <a href="index.html">总览</a>
+      <a href="user-manual.html">用户手册</a>
+      <a href="design-philosophy.html">设计理念</a>
+      <a href="architecture.html">Skill 架构</a>
+      <a href="site-model.html">网站模型</a>
+      <a href="glossary.html">术语表</a>
+      <a href="next-steps.html">下一步</a>
+      <a href="log.html">日志</a>
+    </nav>
+    <nav class="i18n en">
+      <a href="index.html">Overview</a>
+      <a href="user-manual.html">User Manual</a>
+      <a href="design-philosophy.html">Design Philosophy</a>
+      <a href="architecture.html">Skill Architecture</a>
+      <a href="site-model.html">Living Site Model</a>
+      <a href="glossary.html">Glossary</a>
+      <a href="next-steps.html">Next Steps</a>
+      <a href="log.html">Log</a>
+    </nav>
+  </header>
+  <main>
+    <div class="i18n zh">
+      <section class="marker">
+        <strong>简短版：</strong>不要只要求“回答”，而要要求“研究产出”。告诉 `$phd` 主题、资料或范围、深度、输出形态，以及是否需要更新 living HTML site。
+      </section>
+
+      <section>
+        <h2>什么时候使用</h2>
+        <div class="grid">
+          <article class="card">
+            <h3>理解课题</h3>
+            <p>把一个模糊课题转成清晰框架：定义、组成部分、关系、边界和开放问题。</p>
+          </article>
+          <article class="card">
+            <h3>调研相关工作</h3>
+            <p>比较论文、项目、公司、人物、组织、学派或技术路线。</p>
+          </article>
+          <article class="card">
+            <h3>综合复杂材料</h3>
+            <p>对复杂材料进行总结、抽象、组织和扩展，并从多个维度梳理。</p>
+          </article>
+          <article class="card">
+            <h3>生长研究网站</h3>
+            <p>创建或 enrich 静态 HTML 网站，记录背景、相关工作、框架、假设、来源和日志。</p>
+          </article>
+        </div>
+      </section>
+
+      <section>
+        <h2>如何写 Prompt</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>部分</th>
+              <th>说明什么</th>
+              <th>例子</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>主题</td><td>说明概念、领域、问题、语料或项目。</td><td>"research agents for literature review"</td></tr>
+            <tr><td>目标</td><td>指定背景整理、survey、框架、综合、假设或网站更新。</td><td>"build a concise cognitive framework and identify gaps"</td></tr>
+            <tr><td>范围</td><td>限定资料、时间、人物组织、技术范围或篇幅。</td><td>"focus on 2023-2026 systems and open-source projects"</td></tr>
+            <tr><td>输出</td><td>指定产物形态，或让 `$phd` 判断。</td><td>"produce a related work matrix and update the site"</td></tr>
+            <tr><td>持续性</td><td>说明是否创建或更新 HTML research site。</td><td>"enrich the existing site, add a log entry, and put proposed follow-ups in next-steps.html"</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section>
+        <h2>Prompt 模板</h2>
+        <div class="grid">
+          <article class="card">
+            <h3>快速框架</h3>
+            <p><code>使用 $phd 分析 [主题]。形成简洁认知框架：定义、组成、关系、边界、张力、相关概念、insights、hypotheses 和 open questions。</code></p>
+          </article>
+          <article class="card">
+            <h3>相关工作</h3>
+            <p><code>使用 $phd survey [主题] 的相关工作。按 claim、方法、证据、假设、优点、局限和与我项目的关系进行比较。</code></p>
+          </article>
+          <article class="card">
+            <h3>复杂材料</h3>
+            <p><code>使用 $phd 总结、抽象并扩展这些材料。从时间、因果、模块、行动者和失败模式等 lens 梳理。</code></p>
+          </article>
+          <article class="card">
+            <h3>持续网站</h3>
+            <p><code>使用 $phd enrich 这个已有 research site。先读现有页面，保留已有工作，加入新发现，更新 glossary 和 hypotheses，并把建议的后续工作写入 next-steps.html 等我确认。</code></p>
+          </article>
+        </div>
+      </section>
+
+      <section>
+        <h2>例子</h2>
+        <article class="card example">
+          <h3>例子 1：认知框架</h3>
+          <p><strong>用户：</strong>使用 $phd 分析 “agentic research systems”。我想快速获得完整 mental model。</p>
+          <p><strong>预期：</strong>一页框架，包含定义、组成、流程、行动者、技术路线、失败模式、insights、hypotheses 和开放问题。</p>
+        </article>
+        <article class="card example">
+          <h3>例子 2：相关工作 Survey</h3>
+          <p><strong>用户：</strong>使用 $phd 比较 AI agents for academic literature review 的相关工作。关注系统，不要泛泛比较聊天机器人。</p>
+          <p><strong>预期：</strong>一个矩阵，按 workflow automation、search/retrieval、summarization、citation management、hypothesis generation 分组。</p>
+        </article>
+        <article class="card example">
+          <h3>例子 3：复杂信息</h3>
+          <p><strong>用户：</strong>使用 $phd 处理这些笔记。总结内容，抽象机制，并按时间、因果、组织和模块梳理。</p>
+          <p><strong>预期：</strong>一个综合报告，包含 timeline、causal model、actor map、module map、非显然 insights，以及清晰标注的不确定 claim。</p>
+        </article>
+        <article class="card example">
+          <h3>例子 4：Enrich 研究网站</h3>
+          <p><strong>用户：</strong>使用 $phd 更新这个关于 “Codex automations” 的研究网站。增加 background、related work、glossary、hypotheses 和 log entry。把后续建议放到 next-steps.html，不要创建 todos.md。</p>
+          <p><strong>预期：</strong>更新 HTML 页面，标记变化，增加 sources，补充 glossary，修订 hypotheses，并在 next-steps.html 中列出需要用户确认的下一步。</p>
+        </article>
+      </section>
+
+      <section>
+        <h2>给 Agents</h2>
+        <p>当 agent 调用 `$phd` 时，应有意识地选择 operators、lenses 和 output patterns。不要默认加载全部 reference，也不要默认生成所有 artifact。</p>
+        <ul>
+          <li><a href="../references/operators.md">operators.md</a>：研究动作。</li>
+          <li><a href="../references/lenses.md">lenses.md</a>：分析维度。</li>
+          <li><a href="../references/output-patterns.md">output-patterns.md</a>：产物形态。</li>
+          <li><a href="../references/evidence-and-uncertainty.md">evidence-and-uncertainty.md</a>：可靠性。</li>
+          <li><a href="../references/living-research-site.md">living-research-site.md</a>：持续 HTML 网站工作。</li>
+        </ul>
+      </section>
+    </div>
+
+    <div class="i18n en">
+      <section class="marker">
+        <strong>Short version:</strong> Ask for a research outcome, not just an answer. Tell `$phd` the topic, sources or scope, desired depth, output shape, and whether it should update a living HTML site.
+      </section>
+
+      <section>
+        <h2>When To Use It</h2>
+        <div class="grid">
+          <article class="card"><h3>Understand a Topic</h3><p>Turn a vague topic into a concise framework with definitions, components, relationships, boundaries, and open questions.</p></article>
+          <article class="card"><h3>Survey Related Work</h3><p>Compare papers, projects, companies, people, organizations, schools of thought, or technical routes.</p></article>
+          <article class="card"><h3>Synthesize Material</h3><p>Summarize, abstract, organize, and extend dense information across multiple dimensions.</p></article>
+          <article class="card"><h3>Grow a Research Site</h3><p>Create or enrich a static HTML site that records background, related work, frameworks, hypotheses, sources, and logs.</p></article>
+        </div>
+      </section>
+
+      <section>
+        <h2>How To Prompt It</h2>
+        <table>
+          <thead><tr><th>Part</th><th>What to say</th><th>Example</th></tr></thead>
+          <tbody>
+            <tr><td>Topic</td><td>Name the concept, field, question, corpus, or project.</td><td>"research agents for literature review"</td></tr>
+            <tr><td>Goal</td><td>Ask for background, survey, framework, synthesis, hypotheses, or site enrichment.</td><td>"build a concise cognitive framework and identify gaps"</td></tr>
+            <tr><td>Scope</td><td>Constrain sources, period, actors, organizations, technical area, or length.</td><td>"focus on 2023-2026 systems and open-source projects"</td></tr>
+            <tr><td>Output</td><td>Choose an artifact form or let `$phd` choose.</td><td>"produce a related work matrix and update the site"</td></tr>
+            <tr><td>Durability</td><td>Say whether to create or update an HTML research site.</td><td>"enrich the existing site, add a log entry, and put proposed follow-ups in next-steps.html"</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section>
+        <h2>Prompt Templates</h2>
+        <div class="grid">
+          <article class="card"><h3>Fast Framework</h3><p><code>Use $phd on [topic]. Build a concise conceptual framework: definition, components, relationships, boundaries, tensions, related concepts, insights, hypotheses, and open questions.</code></p></article>
+          <article class="card"><h3>Related Work</h3><p><code>Use $phd to survey related work on [topic]. Compare major works by claim, method, evidence, assumptions, strengths, limits, and relationship to my project.</code></p></article>
+          <article class="card"><h3>Complex Material</h3><p><code>Use $phd to summarize, abstract, and expand this material. Structure it across temporal, causal, modular, actor, and failure-mode lenses.</code></p></article>
+          <article class="card"><h3>Living Site</h3><p><code>Use $phd to enrich this existing research site. Read current pages first, preserve prior work, add findings, update glossary and hypotheses, and put proposed follow-ups in next-steps.html for my confirmation.</code></p></article>
+        </div>
+      </section>
+
+      <section>
+        <h2>Examples</h2>
+        <article class="card example"><h3>Example 1: Cognitive Framework</h3><p><strong>User:</strong> Use $phd to analyze "agentic research systems". I want a quick but complete mental model.</p><p><strong>Expected:</strong> A one-page framework with definition, components, workflow, actors, technical routes, failure modes, insights, hypotheses, and open questions.</p></article>
+        <article class="card example"><h3>Example 2: Related Work Survey</h3><p><strong>User:</strong> Use $phd to compare related work on AI agents for academic literature review. Focus on systems, not generic chatbots.</p><p><strong>Expected:</strong> A matrix grouped by workflow automation, search/retrieval, summarization, citation management, and hypothesis generation.</p></article>
+        <article class="card example"><h3>Example 3: Complex Information</h3><p><strong>User:</strong> Use $phd on these notes. Summarize them, abstract the mechanism, and organize by time, causality, organizations, and modules.</p><p><strong>Expected:</strong> A synthesis with timeline, causal model, actor map, module map, non-obvious insights, and uncertain claims clearly marked.</p></article>
+        <article class="card example"><h3>Example 4: Enrich a Research Website</h3><p><strong>User:</strong> Use $phd to update this research site about "Codex automations". Add background, related work, glossary entries, hypotheses, and a log entry. Put proposed follow-ups in next-steps.html; do not create todos.md.</p><p><strong>Expected:</strong> Updated HTML pages, marked changes, added glossary terms and sources, revised hypotheses, and proposed next steps waiting for user confirmation.</p></article>
+      </section>
+
+      <section>
+        <h2>For Agents</h2>
+        <p>When an agent invokes `$phd`, choose operators, lenses, and output patterns deliberately. Do not load every reference file or produce every artifact by default.</p>
+        <ul>
+          <li><a href="../references/operators.md">operators.md</a>: research actions.</li>
+          <li><a href="../references/lenses.md">lenses.md</a>: analytical dimensions.</li>
+          <li><a href="../references/output-patterns.md">output-patterns.md</a>: artifact shapes.</li>
+          <li><a href="../references/evidence-and-uncertainty.md">evidence-and-uncertainty.md</a>: reliability.</li>
+          <li><a href="../references/living-research-site.md">living-research-site.md</a>: durable HTML site work.</li>
+        </ul>
+      </section>
+    </div>
+
+    <footer>
+      <span class="i18n zh">本手册会随着真实使用继续演化。</span>
+      <span class="i18n en">This manual should evolve from real usage examples.</span>
+    </footer>
+  </main>
+</body>
+</html>

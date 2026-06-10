@@ -1,0 +1,4 @@
+interface:
+  display_name: "PhD"
+  short_description: "Systematic research thinking"
+  default_prompt: "Use $phd to build or enrich a living HTML research site for this topic."

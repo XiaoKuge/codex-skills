@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="zh-CN" data-lang="zh">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PhD Skill Glossary</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="language.js" defer></script>
+</head>
+<body>
+  <header>
+    <p class="topline i18n zh">术语表</p><p class="topline i18n en">Glossary</p>
+    <h1 class="i18n zh">PhD Skill 术语表</h1><h1 class="i18n en">PhD Skill Glossary</h1>
+    <p class="lead i18n zh">这里记录 `$phd` 研究过程中出现的重要概念、术语、缩写、方法和页面角色。后续 agent enrich 研究网站时，应把新的核心术语补到这里。</p>
+    <p class="lead i18n en">This page records important concepts, terms, acronyms, methods, and page roles that appear during `$phd` research. Future enrichment passes should add new core terms here.</p>
+    <div class="language-switch" aria-label="Language"><button type="button" data-set-lang="zh">中文</button><button type="button" data-set-lang="en">English</button></div>
+    <nav class="i18n zh"><a href="index.html">总览</a><a href="user-manual.html">用户手册</a><a href="design-philosophy.html">设计理念</a><a href="architecture.html">Skill 架构</a><a href="site-model.html">网站模型</a><a href="glossary.html">术语表</a><a href="next-steps.html">下一步</a><a href="log.html">日志</a></nav>
+    <nav class="i18n en"><a href="index.html">Overview</a><a href="user-manual.html">User Manual</a><a href="design-philosophy.html">Design Philosophy</a><a href="architecture.html">Skill Architecture</a><a href="site-model.html">Living Site Model</a><a href="glossary.html">Glossary</a><a href="next-steps.html">Next Steps</a><a href="log.html">Log</a></nav>
+  </header>
+  <main>
+    <div class="i18n zh">
+      <section class="marker">
+        <strong>维护规则：</strong>定义要短、清楚、可操作。遇到含义不稳定或有争议的术语，应标记为 draft 或 disputed，而不是假装已经稳定。
+      </section>
+      <section>
+        <h2>核心术语</h2>
+        <table>
+          <thead><tr><th>术语</th><th>类型</th><th>定义</th><th>为什么重要</th><th>相关术语</th><th>状态</th></tr></thead>
+          <tbody>
+            <tr><td>Living Research Site</td><td>概念</td><td>可被持续 enrich 的静态 HTML 研究网站。</td><td>`$phd` 的默认长期输出形态。</td><td>HTML-first, Enrichment, Log</td><td>stable</td></tr>
+            <tr><td>HTML-first</td><td>原则</td><td>durable research artifacts 默认进入 HTML 页面或 section，而不是散落成 Markdown 文件。</td><td>提高可读性、导航性和研究推进速度。</td><td>Glossary, Next Steps, Site Model</td><td>stable</td></tr>
+            <tr><td>Operator</td><td>方法</td><td>一个可组合的研究动作，例如 Background Map、Related Work Survey、Synthesize。</td><td>让 agent 按需选择动作，而不是执行固定流程。</td><td>Lens, Output Pattern</td><td>stable</td></tr>
+            <tr><td>Lens</td><td>方法</td><td>一种分析视角，例如时间、因果、模块、历史、组织或失败模式。</td><td>帮助从多个维度组织复杂问题。</td><td>Operator, Framework</td><td>stable</td></tr>
+            <tr><td>Output Pattern</td><td>产物形态</td><td>研究输出的结构模板，例如 related work matrix、timeline、actor map。</td><td>帮助输出可读、可比较、可继续 enrich。</td><td>Artifact, HTML-first</td><td>stable</td></tr>
+            <tr><td>Next Steps</td><td>页面角色</td><td>记录 agent 建议的后续研究动作、优先级、依赖和用户确认状态的页面。</td><td>防止 agent 擅自扩大范围，也避免生成 todos.md。</td><td>Confirmation, Proposed</td><td>stable</td></tr>
+            <tr><td>Glossary</td><td>页面角色</td><td>集中解释研究中出现的概念、术语、缩写、方法和专名。</td><td>让人和 agent 在长期研究中共享词汇层。</td><td>Background, Frameworks</td><td>stable</td></tr>
+          </tbody>
+        </table>
+      </section>
+    </div>
+
+    <div class="i18n en">
+      <section class="marker">
+        <strong>Maintenance rule:</strong> Definitions should be short, clear, and operational. If a term is unstable or disputed, mark it as draft or disputed instead of pretending it is settled.
+      </section>
+      <section>
+        <h2>Core Terms</h2>
+        <table>
+          <thead><tr><th>Term</th><th>Type</th><th>Definition</th><th>Why it matters</th><th>Related terms</th><th>Status</th></tr></thead>
+          <tbody>
+            <tr><td>Living Research Site</td><td>Concept</td><td>A static HTML research site that can be continuously enriched.</td><td>The default durable output form for `$phd`.</td><td>HTML-first, Enrichment, Log</td><td>stable</td></tr>
+            <tr><td>HTML-first</td><td>Principle</td><td>Durable research artifacts go into HTML pages or sections by default, not scattered Markdown files.</td><td>Improves readability, navigation, and research momentum.</td><td>Glossary, Next Steps, Site Model</td><td>stable</td></tr>
+            <tr><td>Operator</td><td>Method</td><td>A composable research action such as Background Map, Related Work Survey, or Synthesize.</td><td>Lets agents choose needed actions instead of following a fixed workflow.</td><td>Lens, Output Pattern</td><td>stable</td></tr>
+            <tr><td>Lens</td><td>Method</td><td>An analytical view such as temporal, causal, modular, historical, organizational, or failure-mode analysis.</td><td>Helps structure complex topics across multiple dimensions.</td><td>Operator, Framework</td><td>stable</td></tr>
+            <tr><td>Output Pattern</td><td>Artifact shape</td><td>A reusable structure for research output, such as related work matrix, timeline, or actor map.</td><td>Keeps output readable, comparable, and easy to enrich later.</td><td>Artifact, HTML-first</td><td>stable</td></tr>
+            <tr><td>Next Steps</td><td>Page role</td><td>A page for proposed follow-up research actions, priorities, dependencies, and user confirmation status.</td><td>Prevents scope creep and avoids creating todos.md.</td><td>Confirmation, Proposed</td><td>stable</td></tr>
+            <tr><td>Glossary</td><td>Page role</td><td>A centralized page for concepts, terms, acronyms, methods, and named entities that appear in research.</td><td>Creates a shared vocabulary layer for humans and agents.</td><td>Background, Frameworks</td><td>stable</td></tr>
+          </tbody>
+        </table>
+      </section>
+    </div>
+  </main>
+</body>
+</html>

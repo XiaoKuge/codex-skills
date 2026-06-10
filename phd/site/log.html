@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="zh-CN" data-lang="zh">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PhD Skill Design Log</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="language.js" defer></script>
+</head>
+<body>
+  <header>
+    <p class="topline i18n zh">研究日志</p><p class="topline i18n en">Research log</p>
+    <h1 class="i18n zh">PhD Skill 日志</h1><h1 class="i18n en">PhD Skill Log</h1>
+    <p class="lead i18n zh">这里记录 `$phd` skill 自身的设计演化。</p><p class="lead i18n en">A record of how `$phd` evolves.</p>
+    <div class="language-switch" aria-label="Language"><button type="button" data-set-lang="zh">中文</button><button type="button" data-set-lang="en">English</button></div>
+    <nav class="i18n zh"><a href="index.html">总览</a><a href="user-manual.html">用户手册</a><a href="design-philosophy.html">设计理念</a><a href="architecture.html">Skill 架构</a><a href="site-model.html">网站模型</a><a href="glossary.html">术语表</a><a href="next-steps.html">下一步</a><a href="log.html">日志</a></nav>
+    <nav class="i18n en"><a href="index.html">Overview</a><a href="user-manual.html">User Manual</a><a href="design-philosophy.html">Design Philosophy</a><a href="architecture.html">Skill Architecture</a><a href="site-model.html">Living Site Model</a><a href="glossary.html">Glossary</a><a href="next-steps.html">Next Steps</a><a href="log.html">Log</a></nav>
+  </header>
+  <main>
+    <div class="i18n zh">
+      <section class="card"><h2>2026-06-10 - 新增 Glossary 页面</h2><p><span class="pill">new</span></p><ul><li>将 glossary.html 加入 living research site 标准页面。</li><li>要求研究过程中出现的重要概念、术语、缩写、方法、项目、人物和组织进入术语表。</li><li>更新 `$phd` 规范、site model 和导航。</li></ul></section>
+      <section class="card"><h2>2026-06-10 - HTML-first 输出与 next-steps 页面</h2><p><span class="pill">changed</span></p><ul><li>更新 `$phd` 规范：durable research artifacts 默认全部进入 HTML 页面或 section。</li><li>禁止默认生成 actor-map.md、claims.md、todos.md 等 Markdown 研究产物。</li><li>新增 next-steps.html，作为用户编辑和确认后续研究动作的控制面。</li></ul></section>
+      <section class="card"><h2>2026-06-10 - 语言切换模式</h2><p><span class="pill">changed</span></p><ul><li>把站点从中英文并置改成语言切换模式。</li><li>默认中文，可切换 English，并用 localStorage 记住设置。</li><li>更新首页、用户手册、设计理念、架构、网站模型和日志。</li></ul></section>
+      <section class="card"><h2>2026-06-10 - 双语站点</h2><p><span class="pill">changed</span></p><ul><li>将站点改为中英文内容，但初版采用并置排版。</li></ul></section>
+      <section class="card"><h2>2026-06-10 - 添加用户手册</h2><p><span class="pill">new</span></p><ul><li>添加 `user-manual.html`，说明人和 agent 应如何使用 `$phd`。</li><li>加入 prompt 模板和例子。</li></ul></section>
+      <section class="card"><h2>2026-06-10 - 初始构建</h2><p><span class="pill">new</span></p><ul><li>在 `C:\Users\syz\codex\skills\phd` 创建 `phd` skill。</li><li>将该 skill 定义为可组合的研究认知工具箱。</li><li>添加 operators、lenses、output patterns、evidence discipline 和 living research site references。</li></ul></section>
+    </div>
+    <div class="i18n en">
+      <section class="card"><h2>2026-06-10 - Glossary Page Added</h2><p><span class="pill">new</span></p><ul><li>Added glossary.html as a standard living research site page.</li><li>Required important concepts, terms, acronyms, methods, projects, people, and organizations to enter the glossary during research.</li><li>Updated `$phd` rules, site model, and navigation.</li></ul></section>
+      <section class="card"><h2>2026-06-10 - HTML-first Output And Next Steps Page</h2><p><span class="pill">changed</span></p><ul><li>Updated `$phd` rules so durable research artifacts go into HTML pages or sections by default.</li><li>Stopped default creation of Markdown research artifacts such as actor-map.md, claims.md, and todos.md.</li><li>Added next-steps.html as the user-editable control surface for confirming future research actions.</li></ul></section>
+      <section class="card"><h2>2026-06-10 - Language Switch Mode</h2><p><span class="pill">changed</span></p><ul><li>Changed the site from side-by-side bilingual layout to language switching.</li><li>Chinese is the default, English is available, and localStorage remembers the setting.</li><li>Updated overview, manual, philosophy, architecture, site model, and log.</li></ul></section>
+      <section class="card"><h2>2026-06-10 - Bilingual Site</h2><p><span class="pill">changed</span></p><ul><li>Updated the site to include English and Chinese content, initially as side-by-side sections.</li></ul></section>
+      <section class="card"><h2>2026-06-10 - User Manual Added</h2><p><span class="pill">new</span></p><ul><li>Added `user-manual.html` to explain how humans and agents should use `$phd`.</li><li>Included prompt templates and examples.</li></ul></section>
+      <section class="card"><h2>2026-06-10 - Initial Build</h2><p><span class="pill">new</span></p><ul><li>Created the `phd` skill under `C:\Users\syz\codex\skills\phd`.</li><li>Defined the skill as a composable research cognition toolkit.</li><li>Added references for operators, lenses, output patterns, evidence discipline, and living research sites.</li></ul></section>
+    </div>
+  </main>
+</body>
+</html>

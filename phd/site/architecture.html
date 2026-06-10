@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="zh-CN" data-lang="zh">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PhD Skill Architecture</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="language.js" defer></script>
+</head>
+<body>
+  <header>
+    <p class="topline i18n zh">Skill 架构</p><p class="topline i18n en">Skill architecture</p>
+    <h1>Operators + Lenses + Artifacts + Evidence</h1>
+    <p class="lead i18n zh">`$phd` 把研究能力拆成四层：做什么、怎么看、产出什么、如何保持可靠。</p>
+    <p class="lead i18n en">`$phd` separates research capability into what to do, how to look, what to produce, and how to stay reliable.</p>
+    <div class="language-switch" aria-label="Language"><button type="button" data-set-lang="zh">中文</button><button type="button" data-set-lang="en">English</button></div>
+    <nav class="i18n zh"><a href="index.html">总览</a><a href="user-manual.html">用户手册</a><a href="design-philosophy.html">设计理念</a><a href="architecture.html">Skill 架构</a><a href="site-model.html">网站模型</a><a href="glossary.html">术语表</a><a href="next-steps.html">下一步</a><a href="log.html">日志</a></nav>
+    <nav class="i18n en"><a href="index.html">Overview</a><a href="user-manual.html">User Manual</a><a href="design-philosophy.html">Design Philosophy</a><a href="architecture.html">Skill Architecture</a><a href="site-model.html">Living Site Model</a><a href="glossary.html">Glossary</a><a href="next-steps.html">Next Steps</a><a href="log.html">Log</a></nav>
+  </header>
+  <main>
+    <div class="i18n zh">
+      <section><h2>架构图</h2><table><thead><tr><th>层</th><th>作用</th><th>例子</th></tr></thead><tbody>
+        <tr><td>Operators</td><td>研究动作</td><td>Background Map, Related Work Survey, Abstract, Compare, Synthesize, Generate Hypotheses</td></tr>
+        <tr><td>Lenses</td><td>分析视角</td><td>Temporal, causal, historical, actor, organization, modular, method, incentive, governance</td></tr>
+        <tr><td>Artifacts</td><td>输出形态</td><td>Matrix, timeline, taxonomy, concept map, causal model, one-page framework, insight memo</td></tr>
+        <tr><td>Evidence</td><td>可靠性规范</td><td>Fact, inference, interpretation, hypothesis, speculation, open question</td></tr>
+        <tr><td>Living Site</td><td>长期研究载体</td><td>HTML pages, JSON data, log entries, cross-links, update markers</td></tr>
+      </tbody></table></section>
+      <section><h2>Agent 应如何使用</h2><ol><li>判断研究意图，并选择一个或多个模式。</li><li>只选择当前任务需要的 operators 和 lenses。</li><li>选择适合目标的 output artifact。</li><li>对重要 claim 应用 evidence discipline。</li><li>当需要长期产出时，创建或 enrich HTML research site。</li></ol></section>
+    </div>
+    <div class="i18n en">
+      <section><h2>Architecture Map</h2><table><thead><tr><th>Layer</th><th>Role</th><th>Examples</th></tr></thead><tbody>
+        <tr><td>Operators</td><td>Research actions</td><td>Background Map, Related Work Survey, Abstract, Compare, Synthesize, Generate Hypotheses</td></tr>
+        <tr><td>Lenses</td><td>Analytical views</td><td>Temporal, causal, historical, actor, organization, modular, method, incentive, governance</td></tr>
+        <tr><td>Artifacts</td><td>Output shapes</td><td>Matrix, timeline, taxonomy, concept map, causal model, one-page framework, insight memo</td></tr>
+        <tr><td>Evidence</td><td>Reliability discipline</td><td>Fact, inference, interpretation, hypothesis, speculation, open question</td></tr>
+        <tr><td>Living Site</td><td>Durable research surface</td><td>HTML pages, JSON data, log entries, cross-links, update markers</td></tr>
+      </tbody></table></section>
+      <section><h2>How An Agent Should Use It</h2><ol><li>Infer the research intent and choose one or more modes.</li><li>Select only the operators and lenses needed for the task.</li><li>Choose an output artifact that fits the intent.</li><li>Apply evidence discipline to important claims.</li><li>Create or enrich an HTML research site when durable output matters.</li></ol></section>
+    </div>
+    <footer><span class="i18n zh">这个架构应通过真实研究任务继续演化。</span><span class="i18n en">This architecture should evolve through real research tasks.</span></footer>
+  </main>
+</body>
+</html>
