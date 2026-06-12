@@ -1,7 +1,7 @@
 {
   "site": "phd-skill-design",
   "created": "2026-06-10",
-  "purpose": "Living HTML design site for the phd Codex skill with persistent Chinese/English language switching.",
+  "purpose": "Living HTML design site for the phd Codex skill with persistent Chinese/English language switching and research-to-video production guidance.",
   "pages": [
     "index.html",
     "user-manual.html",
@@ -12,5 +12,5 @@
     "next-steps.html",
     "log.html"
   ],
-  "status": "html-first-with-glossary-and-next-steps"
+  "status": "html-first-with-glossary-next-steps-and-video-production"
 }

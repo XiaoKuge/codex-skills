@@ -1,6 +1,6 @@
 ---
 name: phd
-description: "Use when Codex should perform systematic research thinking for a concept, topic, field, question, corpus, paper set, project, or complex information bundle. Supports collecting and organizing background information, surveying and comparing related work, building concise conceptual frameworks, summarizing and abstracting complex information, expanding implications, structuring analysis across spatial/module, temporal/stage, causal, historical, actor, organization, and work dimensions, and generating insights, hypotheses, gaps, and research directions. Default durable output is a continuously enriched static HTML research site. The skill is composable: choose the needed research operators and lenses rather than following one fixed workflow."
+description: "Use when Codex should perform systematic research thinking for a concept, topic, field, question, corpus, paper set, project, or complex information bundle, or turn a research site or user-proposed topic into a clear research walkthrough video integrated into the site. Supports background mapping, related work survey, conceptual frameworks, synthesis, multi-lens analysis, insights, hypotheses, gaps, and research directions. For video, produce serious non-promotional topic deconstruction, plain-language scripts, storyboards, narration plans, shot lists, tool plans such as Manim/FFmpeg, and `video.html` updates without making large model video generation a hard dependency. Default durable output is a continuously enriched static HTML research site."
 ---
 
 # PhD
@@ -25,6 +25,7 @@ Before producing output, decide which mode applies:
 - **Synthesize**: Compress complex material into abstractions, mechanisms, tensions, and implications.
 - **Enrich**: Update an existing research site with new sources, claims, hypotheses, or analysis.
 - **Generate**: Produce insights, hypotheses, gaps, future directions, or next research moves.
+- **Research Video**: Convert a research site or user-proposed topic into a clear, non-promotional walkthrough integrated into the site, explaining the purpose, content, structure, and decomposition of the topic.
 
 Modes can be combined. State the chosen mode briefly when useful.
 
@@ -67,8 +68,24 @@ Use `references/output-patterns.md` to choose an output form:
 - open question tree
 - living research site update
 - next steps page
+- research video walkthrough
 
 Prefer concise artifacts that can be integrated into future work. For durable work, integrate artifacts into HTML pages rather than scattering Markdown files.
+
+## Research Video
+
+Use `references/video-production.md` when the user asks to make a video from a research site, review a research site for video content, introduce a topic in an accessible way, explain the purpose and contents of a research project, produce a script, storyboard, narration, shot list, or show how to systematically deconstruct a topic.
+
+Research video work should remain serious and research-backed:
+
+- Start by reading the existing research site when one exists, or by constructing a compact research framework from the user's topic.
+- Explain purpose, context, core concepts, structure, evidence, uncertainty, and open questions in plain language.
+- Make the research process visible: how the topic was decomposed, compared, traced, and synthesized.
+- Avoid hype, persuasion, or go-to-market framing unless the user explicitly asks for that later.
+- Convert the framework into a time-coded structure with scenes, claims, evidence, visuals, narration, and transitions.
+- For actual rendering, prefer deterministic tools such as Manim, FFmpeg, browser capture, or presentation rendering when they fit; do not make large model video generation a hard dependency.
+- Produce a script, tool plan, or production package when actual rendering tools, footage, voice, music, or brand assets are missing.
+- Integrate generated video artifacts into the research site by default: create or update `video.html`, link it from relevant pages when navigation is being maintained, update sources and next steps when needed, and log the update.
 
 ## Evidence Discipline
 

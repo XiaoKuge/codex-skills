@@ -13,8 +13,8 @@
     <p class="topline i18n en">User manual</p>
     <h1 class="i18n zh">如何使用 PhD Skill</h1>
     <h1 class="i18n en">How To Use PhD Skill</h1>
-    <p class="lead i18n zh">`$phd` 是一个可组合的研究 skill，用于建立认知框架、survey 相关工作、综合复杂材料、提出假设，并持续 enrich 静态 HTML 研究网站。</p>
-    <p class="lead i18n en">`$phd` is a composable research skill for building frameworks, surveying related work, synthesizing complex material, generating hypotheses, and continuously enriching static HTML research sites.</p>
+    <p class="lead i18n zh">`$phd` 是一个可组合的研究 skill，用于建立认知框架、survey 相关工作、综合复杂材料、提出假设、制作研究视频方案，并持续 enrich 静态 HTML 研究网站。</p>
+    <p class="lead i18n en">`$phd` is a composable research skill for building frameworks, surveying related work, synthesizing complex material, generating hypotheses, packaging research for video, and continuously enriching static HTML research sites.</p>
     <div class="language-switch" aria-label="Language">
       <button type="button" data-set-lang="zh">中文</button>
       <button type="button" data-set-lang="en">English</button>
@@ -65,6 +65,10 @@
             <h3>生长研究网站</h3>
             <p>创建或 enrich 静态 HTML 网站，记录背景、相关工作、框架、假设、来源和日志。</p>
           </article>
+          <article class="card">
+            <h3>制作研究视频</h3>
+            <p>把研究转成 video brief、叙事主线、脚本、分镜、shot list、视觉方案和剪辑计划。</p>
+          </article>
         </div>
       </section>
 
@@ -82,7 +86,7 @@
             <tr><td>主题</td><td>说明概念、领域、问题、语料或项目。</td><td>"research agents for literature review"</td></tr>
             <tr><td>目标</td><td>指定背景整理、survey、框架、综合、假设或网站更新。</td><td>"build a concise cognitive framework and identify gaps"</td></tr>
             <tr><td>范围</td><td>限定资料、时间、人物组织、技术范围或篇幅。</td><td>"focus on 2023-2026 systems and open-source projects"</td></tr>
-            <tr><td>输出</td><td>指定产物形态，或让 `$phd` 判断。</td><td>"produce a related work matrix and update the site"</td></tr>
+            <tr><td>输出</td><td>指定产物形态，或让 `$phd` 判断。</td><td>"produce a related work matrix, or turn it into a 3-minute explainer script"</td></tr>
             <tr><td>持续性</td><td>说明是否创建或更新 HTML research site。</td><td>"enrich the existing site, add a log entry, and put proposed follow-ups in next-steps.html"</td></tr>
           </tbody>
         </table>
@@ -106,6 +110,10 @@
           <article class="card">
             <h3>持续网站</h3>
             <p><code>使用 $phd enrich 这个已有 research site。先读现有页面，保留已有工作，加入新发现，更新 glossary 和 hypotheses，并把建议的后续工作写入 next-steps.html 等我确认。</code></p>
+          </article>
+          <article class="card">
+            <h3>研究视频</h3>
+            <p><code>使用 $phd 先读这个 research site，或围绕 [主题] 建立研究框架，然后做成一个 [时长] 的研究讲解视频页。输出 topic deconstruction、time-coded script、storyboard、shot list、Manim/FFmpeg 等工具方案、证据 notes 和缺失素材清单，并整合进 video.html。</code></p>
           </article>
         </div>
       </section>
@@ -132,6 +140,11 @@
           <p><strong>用户：</strong>使用 $phd 更新这个关于 “Codex automations” 的研究网站。增加 background、related work、glossary、hypotheses 和 log entry。把后续建议放到 next-steps.html，不要创建 todos.md。</p>
           <p><strong>预期：</strong>更新 HTML 页面，标记变化，增加 sources，补充 glossary，修订 hypotheses，并在 next-steps.html 中列出需要用户确认的下一步。</p>
         </article>
+        <article class="card example">
+          <h3>例子 5：研究视频化</h3>
+          <p><strong>用户：</strong>使用 $phd 把这份关于 “agentic research systems” 的研究 site 看一遍，整理成 5 分钟研究讲解视频。需要脚本、分镜、shot list，并考虑 Manim 等可复现工具。</p>
+          <p><strong>预期：</strong>更新 video.html，包含课题解构、研究过程、叙事结构、time-coded script、storyboard、shot list、工具方案、证据 notes、缺失素材和后续制作任务。</p>
+        </article>
       </section>
 
       <section>
@@ -142,6 +155,7 @@
           <li><a href="../references/lenses.md">lenses.md</a>：分析维度。</li>
           <li><a href="../references/output-patterns.md">output-patterns.md</a>：产物形态。</li>
           <li><a href="../references/evidence-and-uncertainty.md">evidence-and-uncertainty.md</a>：可靠性。</li>
+          <li><a href="../references/video-production.md">video-production.md</a>：研究视频化。</li>
           <li><a href="../references/living-research-site.md">living-research-site.md</a>：持续 HTML 网站工作。</li>
         </ul>
       </section>
@@ -159,6 +173,7 @@
           <article class="card"><h3>Survey Related Work</h3><p>Compare papers, projects, companies, people, organizations, schools of thought, or technical routes.</p></article>
           <article class="card"><h3>Synthesize Material</h3><p>Summarize, abstract, organize, and extend dense information across multiple dimensions.</p></article>
           <article class="card"><h3>Grow a Research Site</h3><p>Create or enrich a static HTML site that records background, related work, frameworks, hypotheses, sources, and logs.</p></article>
+          <article class="card"><h3>Make Research Videos</h3><p>Turn research into video briefs, narrative spines, scripts, storyboards, shot lists, visual plans, and edit plans.</p></article>
         </div>
       </section>
 
@@ -170,7 +185,7 @@
             <tr><td>Topic</td><td>Name the concept, field, question, corpus, or project.</td><td>"research agents for literature review"</td></tr>
             <tr><td>Goal</td><td>Ask for background, survey, framework, synthesis, hypotheses, or site enrichment.</td><td>"build a concise cognitive framework and identify gaps"</td></tr>
             <tr><td>Scope</td><td>Constrain sources, period, actors, organizations, technical area, or length.</td><td>"focus on 2023-2026 systems and open-source projects"</td></tr>
-            <tr><td>Output</td><td>Choose an artifact form or let `$phd` choose.</td><td>"produce a related work matrix and update the site"</td></tr>
+            <tr><td>Output</td><td>Choose an artifact form or let `$phd` choose.</td><td>"produce a related work matrix, or turn it into a 3-minute explainer script"</td></tr>
             <tr><td>Durability</td><td>Say whether to create or update an HTML research site.</td><td>"enrich the existing site, add a log entry, and put proposed follow-ups in next-steps.html"</td></tr>
           </tbody>
         </table>
@@ -183,6 +198,7 @@
           <article class="card"><h3>Related Work</h3><p><code>Use $phd to survey related work on [topic]. Compare major works by claim, method, evidence, assumptions, strengths, limits, and relationship to my project.</code></p></article>
           <article class="card"><h3>Complex Material</h3><p><code>Use $phd to summarize, abstract, and expand this material. Structure it across temporal, causal, modular, actor, and failure-mode lenses.</code></p></article>
           <article class="card"><h3>Living Site</h3><p><code>Use $phd to enrich this existing research site. Read current pages first, preserve prior work, add findings, update glossary and hypotheses, and put proposed follow-ups in next-steps.html for my confirmation.</code></p></article>
+          <article class="card"><h3>Research Video</h3><p><code>Use $phd to read this research site, or build a research frame for [topic], then turn it into a [duration] research walkthrough video page. Produce topic deconstruction, a time-coded script, storyboard, shot list, Manim/FFmpeg-style tool plan, evidence notes, missing assets, and integrate it into video.html.</code></p></article>
         </div>
       </section>
 
@@ -192,6 +208,7 @@
         <article class="card example"><h3>Example 2: Related Work Survey</h3><p><strong>User:</strong> Use $phd to compare related work on AI agents for academic literature review. Focus on systems, not generic chatbots.</p><p><strong>Expected:</strong> A matrix grouped by workflow automation, search/retrieval, summarization, citation management, and hypothesis generation.</p></article>
         <article class="card example"><h3>Example 3: Complex Information</h3><p><strong>User:</strong> Use $phd on these notes. Summarize them, abstract the mechanism, and organize by time, causality, organizations, and modules.</p><p><strong>Expected:</strong> A synthesis with timeline, causal model, actor map, module map, non-obvious insights, and uncertain claims clearly marked.</p></article>
         <article class="card example"><h3>Example 4: Enrich a Research Website</h3><p><strong>User:</strong> Use $phd to update this research site about "Codex automations". Add background, related work, glossary entries, hypotheses, and a log entry. Put proposed follow-ups in next-steps.html; do not create todos.md.</p><p><strong>Expected:</strong> Updated HTML pages, marked changes, added glossary terms and sources, revised hypotheses, and proposed next steps waiting for user confirmation.</p></article>
+        <article class="card example"><h3>Example 5: Research-To-Video</h3><p><strong>User:</strong> Use $phd to read this research site on "agentic research systems" and turn it into a 5-minute research walkthrough video. I need a script, storyboard, shot list, and consideration of reproducible tools such as Manim.</p><p><strong>Expected:</strong> Updated video.html with topic deconstruction, research process, narrative structure, time-coded script, storyboard, shot list, tool plan, evidence notes, missing assets, and follow-up production tasks.</p></article>
       </section>
 
       <section>
@@ -202,6 +219,7 @@
           <li><a href="../references/lenses.md">lenses.md</a>: analytical dimensions.</li>
           <li><a href="../references/output-patterns.md">output-patterns.md</a>: artifact shapes.</li>
           <li><a href="../references/evidence-and-uncertainty.md">evidence-and-uncertainty.md</a>: reliability.</li>
+          <li><a href="../references/video-production.md">video-production.md</a>: research-to-video work.</li>
           <li><a href="../references/living-research-site.md">living-research-site.md</a>: durable HTML site work.</li>
         </ul>
       </section>

@@ -20,6 +20,7 @@ site/
   related-work.html
   frameworks.html
   hypotheses.html
+  video.html
   next-steps.html
   sources.html
   log.html
@@ -37,6 +38,7 @@ When enriching an existing site:
 - Mark newly added or materially changed content.
 - Add a dated entry to `log.html`.
 - Add proposed next actions to `next-steps.html` instead of creating `todos.md`.
+- Integrate generated video work into `video.html` or a clearly named video section; do not leave it as a detached artifact by default.
 - Add or update terms in `glossary.html` when new concepts, abbreviations, named methods, or domain-specific vocabulary appear.
 - Do not execute major next steps merely because they are listed; leave them for user review unless the user has already authorized them.
 - Update structured data files if they exist.
@@ -86,6 +88,19 @@ When enriching an existing site:
 - open questions
 - tests and falsification criteria
 
+`video.html`:
+- video briefs
+- narrative spines
+- scripts
+- storyboards
+- shot lists
+- visual and asset plans
+- tool plans, such as Manim scenes, FFmpeg assembly, browser capture, or presentation rendering
+- edit notes
+- production risks and missing inputs
+- embedded or linked rendered video files when they exist
+- transcripts and source notes for the video
+
 `next-steps.html`:
 - proposed next research steps
 - why each step matters
@@ -112,6 +127,7 @@ When enriching an existing site:
 - Prefer semantic markup and tables where useful.
 - Create or update HTML pages for all durable research artifacts.
 - Avoid creating Markdown side files for claims, actor maps, notes, or todos.
+- Use `video.html` by default for generated video artifacts; use a video section only for small early drafts.
 - Avoid heavy dependencies unless the user asks.
 - Use visible change markers for new or revised material.
 - Make every page navigable from every other page.

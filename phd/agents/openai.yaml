@@ -1,4 +1,4 @@
 interface:
   display_name: "PhD"
-  short_description: "Systematic research thinking"
-  default_prompt: "Use $phd to build or enrich a living HTML research site for this topic."
+  short_description: "Research thinking and walkthrough videos"
+  default_prompt: "Use $phd to build or enrich a living HTML research site, or add a clear topic-deconstruction video page to the site."

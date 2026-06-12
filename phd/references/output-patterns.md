@@ -189,6 +189,42 @@ Rules:
 - Let the user edit or confirm proposed steps before major expansion.
 - Keep the list short enough to support momentum.
 
+## Research Video Walkthrough
+
+Use when a research site or user-proposed topic should become a site-integrated video walkthrough, topic deconstruction, script, storyboard, narration, shot list, visual treatment, or edit plan.
+
+Include only the pieces needed for the request:
+- video brief
+- topic deconstruction plan
+- narrative spine
+- time-coded script
+- storyboard
+- shot list
+- visual and asset plan
+- tool plan
+- edit notes
+- evidence notes
+- production risks and missing inputs
+
+Durable site location:
+- Use `video.html` by default for video artifacts.
+- Use a video section in `index.html`, `frameworks.html`, or `next-steps.html` only for small early drafts, then promote to `video.html` when substantial.
+- Use `sources.html` for source support and limitations.
+- Use `next-steps.html` for proposed production tasks.
+- Link `video.html` from navigation or a relevant overview page when maintaining the site.
+
+Rules:
+- Load `video-production.md` for detailed video workflow.
+- Read the research site first when one exists.
+- Integrate the generated video plan, script, storyboard, and related notes into the research site by default.
+- Make systematic research work visible without turning the video into a sales pitch.
+- Prefer deterministic, scriptable video tools such as Manim, FFmpeg, browser capture, or presentation rendering when actual video generation is requested.
+- Do not make large model video generation a hard dependency; use it only as optional asset assistance when appropriate.
+- Keep factual claims traceable without making narration unreadable.
+- Mark generated or illustrative visuals as illustrative when they are not documentary evidence.
+- Treat go-to-market as a later optional topic unless explicitly requested.
+- Do not claim a rendered video exists unless an actual video file was produced and checked.
+
 ## Living Research Site Update
 
 Use when enriching a durable HTML research site.
